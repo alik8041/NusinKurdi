@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // منابع JCenter هنوز برخی از این کتابخانه‌ها توش هست
+        maven { url = uri("https://jitpack.io") } // مکمل احتمالی دیگر برای بعضی artifact‌ها
+    }
+}
+
+rootProject.name = "nusinkurdi7"
+include(":app")
